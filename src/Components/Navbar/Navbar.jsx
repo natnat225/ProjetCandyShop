@@ -1,14 +1,29 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Navbar.css";
-import Logo from "../../assets/logoNav.png";
-import Panier from "../../assets/Panier.svg";
+import Logo from "../../Assets/logoNav.png";
+import Panier from "../../Assets/Panier.svg";
 import { useSelector, useDispatch } from "react-redux";
 import { openModal, closeModal } from "../../Features/modalSlice/modalSlice";
 import { Link } from "react-router-dom";
 
 function Navbar(props) {
-  const dispatch = useDispatch();
-  const isOpen = useSelector((state) => state.modal.isOpen);
+    const dispatch = useDispatch();
+    const isOpen = useSelector((state) => state.modal.isOpen);
+    const isLoggedIn = useSelector((state) => state.modal.isLoggedIn);
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
+
+    const validateForm = () => {
+        return email.length > 0 && password.length > 0;
+    };
+
+    const handleSubmit = (event) => {
+        event.preventDefault();
+        if (validateForm()) {
+            dispatch(logIn(email));
+            dispatch(closeModal());
+        }
+    };
 
   return (
     <div>
