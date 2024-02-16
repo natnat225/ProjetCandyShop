@@ -2,7 +2,7 @@ import React from "react";
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
-import Data from "../../assets/data.json";
+import Data from "../../Assets/data.json";
 import "./Product.css";
 function Product(props) {
   const params = useParams();

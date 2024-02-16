@@ -62,3 +62,36 @@
   font-size: 1.3rem;
   color: #085947;
 }
+.carousel {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.carousel__button {
+  background: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin: 0 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.carousel__button--prev {
+  order: 1;
+}
+
+.carousel__image {
+  width: 50%;
+  max-width: 500px;
+  
+  order: 2;
+}
+
+.carousel__button--next {
+  order: 3;
+}
+
