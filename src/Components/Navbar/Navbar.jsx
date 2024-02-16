@@ -4,7 +4,7 @@ import Logo from "../../assets/logoNav.png";
 import Panier from "../../assets/Panier.svg";
 import { useSelector, useDispatch } from "react-redux";
 import { openModal, closeModal } from "../../Features/modalSlice/modalSlice";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function Navbar(props) {
   const dispatch = useDispatch();
@@ -49,19 +49,22 @@ function Navbar(props) {
       </div>
       <div className="NavBar-link flex justify-between items-center h-24">
         <div className="Navlink mx-8 flex gap-8 text-xl">
-          <a href="/chocolats">Chocolat</a>
-          <a href="/bonbons">Bonbons</a>
-          <a href="/glaces">Glaces</a>
-          <a href="/chips">Chips</a>
+          <Link to="/chocolats">Chocolat</Link>
+          <Link to="/bonbons">Bonbons</Link>
+          <Link to="/glaces">Glaces</Link>
+          <Link to="/chips">Chips</Link>
         </div>
         <div className="Nav-Logo">
           <img src={Logo} alt="" className="size-16 me-10 bg-slate-100" />
         </div>
         <div className="Nav-Cart mx-16 gap-5 flex text-md">
           <p>Welcome Guest</p>
-          <button className="buttonCart">
-            <img src={Panier} alt="" className="size-8" />
-          </button>
+
+          <Link to="/panier">
+            <button className="buttonCart">
+              <img src={Panier} alt="" className="size-8" />
+            </button>
+          </Link>
         </div>
       </div>
     </div>

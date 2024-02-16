@@ -2,28 +2,36 @@ import React from "react";
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
-import Data from "../../assets/data.json";
+import Data from "../../data.json";
+import { useDispatch, useSelector } from "react-redux";
 import "./Product.css";
-function Product(props) {
+import { add } from "../../Features/panierSlice";
+import { compose } from "@reduxjs/toolkit";
+
+function Product() {
   const params = useParams();
+  const dispatch = useDispatch();
+  const panier = useSelector((state) => state.panier);
+  const total = useSelector((state) => state.panier.total);
   const type = params.categorie;
   const [data, setData] = useState(Data);
   const [newData, setNewData] = useState([]);
-  const [searchData, setSearchData] = useState([]);
   const [value, setValue] = useState("");
   useEffect(() => {
     const filterProduct = data.filter((item) => item.categorie === type);
     setNewData(filterProduct);
   }, [params, data]);
-//   useEffect(() => {
-//     const searchFilter = newData.filter((item) => item.nom.includes(value));
-//     setSearchData(searchFilter);
-//   }, [value, newData]);
+
+  console.log(panier.panier);
+  // console.log(data);
+  console.log(total);
 
   return (
     <div className="w-full">
       <h1 className="flex justify-center text-5xl my-20 ms-5">
-        {type.charAt(0).toUpperCase() + type.slice(1).toLowerCase()}
+        Our
+        {" " + type.charAt(0).toUpperCase() + type.slice(1).toLowerCase() + " "}
+        products
       </h1>
       <div className="pl-14">
         {/* <h1>{value}</h1> */}
@@ -35,22 +43,27 @@ function Product(props) {
         />
       </div>
       <div className="row">
-        {newData.filter((e) => e.nom.includes(value)).map((item) => (
-          <div className="box">
-            <Link to={`/${type}/${item.id}`}>
-              <img src={item.image} alt="" />
-            </Link>
-            <div className="info_box">
-              <h1>{item.nom}</h1>
-              <p>{item.prix}$</p>
+        {newData
+          .filter((e) => e.nom.toLowerCase().includes(value.toLowerCase()))
+          .map((item) => (
+            <div className="box" key={item.id}>
+              <Link to={`/${type}/${item.id}`}>
+                <img src={item.image} alt="" />
+              </Link>
+              <div className="info_box">
+                <h1>{item.nom}</h1>
+                <p>{item.prix}$</p>
+              </div>
+              <div className="btn_buy">
+                <button
+                  onClick={() => dispatch(add(item))}
+                  className="w-32 h-8 border border-green rounded-sm "
+                >
+                  Buy now
+                </button>
+              </div>
             </div>
-            <div className="btn_buy">
-              <button className="w-32 h-8 border border-green rounded-sm ">
-                Buy now
-              </button>
-            </div>
-          </div>
-        ))}
+          ))}
       </div>
     </div>
   );
