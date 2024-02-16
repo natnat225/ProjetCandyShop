@@ -1,0 +1,10 @@
+.btn_buy {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+.btn_buy button {
+  background-color: #085947;
+  color: white;
+  border-radius: 5px;
+}

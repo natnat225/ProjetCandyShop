@@ -1,165 +1,146 @@
-{
-    "produits": [
-      {
-        "id": 1,
-        "nom": "Haribo Dragibus",
-        "categorie": "Bonbons",
-        "description": "Petits bonbon multi-gout ",
-        "prix": 2.99,
-        "stock": 100,
-        "image": "candyShop_img/candy1.png"
-        
-      },
-      {
-        "id": 2,
-        "nom": "Haribo Reglisse",
-        "categorie": "Bonbons",
-        "description": "Bonbons en rouleaux a la reglise",
-        "prix": 2.99,
-        "stock": 50,
-        "image": "candyShop_img/candy2.png"
-        
-      },
-      {
-        "id": 3,
-        "nom": "Haribo Pik",
-        "categorie": "Bonbons",
-        "description": "Bonbons acidulés pour les amateurs de sensations fortes",
-        "prix": 1.99,
-        "stock": 75,
-        "image": "candyShop_img/candy3.png"
-        
-      },
-      {
-        "id": 4,
-        "nom": "Haribo Tagada Pik",
-        "categorie": "Bonbons",
-        "description": "Bonbons acidulés pour les amateurs de sensations fortes",
-        "prix": 5.99,
-        "stock": 30,
-        "image": "candyShop_img/candy4.png"
-        
-      },
-      {
-        "id": 5,
-        "nom": "Croky Bicky",
-        "categorie": "Chips",
-        "description": "Delicieux chips pomme de terre a la sauce bicky",
-        "prix": 3.49,
-        "stock": 80,
-        "image": "candyShop_img/chips1.png"
-        
-      },
-      {
-        "id": 6,
-        "nom": "Chips Lay's",
-        "categorie": "Chips ",
-        "description": "Delicieux chips de pomme de terres sel",
-        "prix": 0.99,
-        "stock": 120,
-        "image": "candyShop_img/chips3.png"
-        
-      },
-      {
-        "id": 7,
-        "nom": "Chips Lay's Paprika Spicy",
-        "categorie": "Chips",
-        "description": "Delicieux chips pomme de terre au paprika spicy",
-        "prix": 6.99,
-        "stock": 25,
-        "image": "candyShop_img/chips4.png"
-        
-      },
-      {
-        "id": 8,
-        "nom": "Mars",
-        "categorie": "Chocolat",
-        "description": "Barre chocolate au caramel",
-        "prix": 6.99,
-        "stock": 25,
-        "image": "candyShop_img/chocolate1.png"
-        
-      },
-      {
-        "id": 9,
-        "nom": "Snikers",
-        "categorie": "Chocolats",
-        "description": "Barre chocolate a la noisette",
-        "prix": 6.99,
-        "stock": 25,
-        "image": "candyShop_img/chocolate2.png"
-        
-      },
-      {
-        "id": 9,
-        "nom": "Twix",
-        "categorie": "Chocolats",
-        "description": "Duo de barre chocolate avec un suculent biscuit",
-        "prix": 6.99,
-        "stock": 25,
-        "image": "candyShop_img/chocolate3.png"
-        
-      },
-      {
-        "id": 10,
-        "nom": "Magnum Almond",
-        "categorie": "Glaces",
-        "description": "Délicieuce glace au amandes",
-        "prix": 6.99,
-        "stock": 25,
-        "image": "candyShop_img/ice_cream1.png"
-        
-      },
-      {
-        "id": 11,
-        "nom": "Calipo Coca",
-        "categorie": "Glaces",
-        "description": "Délicieux barre glacons au gout coca-cola",
-        "prix": 6.99,
-        "stock": 25,
-        "image": "candyShop_img/ice_cream2.png"
-        
-      },
-      {
-        "id": 12,
-        "nom": "Cornetto Chocolat",
-        "categorie": "Glaces",
-        "description": "Délicieux cornet de glace au chocolat",
-        "prix": 6.99,
-        "stock": 25,
-        "image": "candyShop_img/ice_cream3.png"
-        
-      },
-      {
-        "id": 13,
-        "nom": "Magnum Classic",
-        "categorie": "Glaces",
-        "description": "Delicieuce glace au chocolat et a la glace vanille",
-        "prix": 6.99,
-        "stock": 25,
-        "image": "candyShop_img/ice_cream4.png"
-        
-      },
-      {
-        "id": 14,
-        "nom": "Chips Lay's Bolognese",
-        "categorie": "Chips",
-        "description": "Delicieux chips pomme de terre a la sauce bolognese",
-        "prix": 6.99,
-        "stock": 25,
-        "image": "candyShop_img/chips2.png"
-        
-      },
-      {
-        "id": 15,
-        "nom": "Kinder Bueno White",
-        "categorie": "Chocolat",
-        "description": "Duo de barre chocolate au chocolat blanc et noisette",
-        "prix": 6.99,
-        "stock": 25,
-        "image": "candyShop_img/chocolate4.png"
-        
-      }
-    ]
+[
+  {
+    "id": 1,
+    "nom": "Haribo Dragibus",
+    "categorie": "bonbons",
+    "description": "Petits bonbon multi-gout ",
+    "prix": 2.99,
+    "stock": 100,
+    "image": "candyShop_img/candy1.png"
+  },
+  {
+    "id": 2,
+    "nom": "Haribo Reglisse",
+    "categorie": "bonbons",
+    "description": "Bonbons en rouleaux a la reglise",
+    "prix": 2.99,
+    "stock": 50,
+    "image": "candyShop_img/candy2.png"
+  },
+  {
+    "id": 3,
+    "nom": "Haribo Pik",
+    "categorie": "bonbons",
+    "description": "Bonbons acidulés pour les amateurs de sensations fortes",
+    "prix": 1.99,
+    "stock": 75,
+    "image": "candyShop_img/candy3.png"
+  },
+  {
+    "id": 4,
+    "nom": "Haribo Tagada Pik",
+    "categorie": "bonbons",
+    "description": "Bonbons acidulés pour les amateurs de sensations fortes",
+    "prix": 5.99,
+    "stock": 30,
+    "image": "candyShop_img/candy4.png"
+  },
+  {
+    "id": 5,
+    "nom": "Croky Bicky",
+    "categorie": "chips",
+    "description": "Delicieux chips pomme de terre a la sauce bicky",
+    "prix": 3.49,
+    "stock": 80,
+    "image": "candyShop_img/chips1.png"
+  },
+  {
+    "id": 6,
+    "nom": "Chips Lay's",
+    "categorie": "chips",
+    "description": "Delicieux chips de pomme de terres sel",
+    "prix": 0.99,
+    "stock": 120,
+    "image": "candyShop_img/chips3.png"
+  },
+  {
+    "id": 7,
+    "nom": "Chips Lay's Paprika Spicy",
+    "categorie": "chips",
+    "description": "Delicieux chips pomme de terre au paprika spicy",
+    "prix": 6.99,
+    "stock": 25,
+    "image": "candyShop_img/chips4.png"
+  },
+  {
+    "id": 8,
+    "nom": "Mars",
+    "categorie": "chocolats",
+    "description": "Barre chocolate au caramel",
+    "prix": 6.99,
+    "stock": 25,
+    "image": "candyShop_img/chocolate1.png"
+  },
+  {
+    "id": 9,
+    "nom": "Snikers",
+    "categorie": "chocolats",
+    "description": "Barre chocolate a la noisette",
+    "prix": 6.99,
+    "stock": 25,
+    "image": "candyShop_img/chocolate2.png"
+  },
+  {
+    "id": 9,
+    "nom": "Twix",
+    "categorie": "chocolats",
+    "description": "Duo de barre chocolate avec un suculent biscuit",
+    "prix": 6.99,
+    "stock": 25,
+    "image": "candyShop_img/chocolate3.png"
+  },
+  {
+    "id": 10,
+    "nom": "Magnum Almond",
+    "categorie": "glaces",
+    "description": "Délicieuce glace au amandes",
+    "prix": 6.99,
+    "stock": 25,
+    "image": "/candyShop_img/ice_cream1.png"
+  },
+  {
+    "id": 11,
+    "nom": "Calipo Coca",
+    "categorie": "glaces",
+    "description": "Délicieux barre glacons au gout coca-cola",
+    "prix": 6.99,
+    "stock": 25,
+    "image": "candyShop_img/ice_cream2.png"
+  },
+  {
+    "id": 12,
+    "nom": "Cornetto Chocolat",
+    "categorie": "glaces",
+    "description": "Délicieux cornet de glace au chocolat",
+    "prix": 6.99,
+    "stock": 25,
+    "image": "candyShop_img/ice_cream3.png"
+  },
+  {
+    "id": 13,
+    "nom": "Magnum Classic",
+    "categorie": "glaces",
+    "description": "Delicieuce glace au chocolat et a la glace vanille",
+    "prix": 6.99,
+    "stock": 25,
+    "image": "candyShop_img/ice_cream4.png"
+  },
+  {
+    "id": 14,
+    "nom": "Chips Lay's Bolognese",
+    "categorie": "chips",
+    "description": "Delicieux chips pomme de terre a la sauce bolognese",
+    "prix": 6.99,
+    "stock": 25,
+    "image": "candyShop_img/chips2.png"
+  },
+  {
+    "id": 15,
+    "nom": "Kinder Bueno White",
+    "categorie": "chocolats",
+    "description": "Duo de barre chocolate au chocolat blanc et noisette",
+    "prix": 6.99,
+    "stock": 25,
+    "image": "candyShop_img/chocolate4.png"
   }
-  
+]
