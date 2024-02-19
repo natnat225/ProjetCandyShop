@@ -2,7 +2,7 @@ import React from "react";
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
-import Data from "../../data.json";
+import Data from "../../assets/data.json";
 import { useDispatch, useSelector } from "react-redux";
 import "./Product.css";
 import { add } from "../../Features/panierSlice";

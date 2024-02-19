@@ -1,5 +1,5 @@
 import { useParams } from "react-router-dom";
-import Data from "../../data.json";
+import Data from "../../assets/data.json"
 import { useState, useEffect } from "react";
 import panier from "../../assets/Panier.svg";
 import "./Details.css"

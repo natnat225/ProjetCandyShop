@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./Navbar.css";
-import Logo from "../../Assets/logoNav.png";
-import Panier from "../../Assets/Panier.svg";
+import Logo from "../../assets/logoNav.png";
+import Panier from "../../assets/Panier.svg";
 import { useSelector, useDispatch } from "react-redux";
 import { openModal, closeModal } from "../../Features/modalSlice/modalSlice";
 import { Link } from "react-router-dom";

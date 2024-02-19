@@ -26,23 +26,24 @@ export const panierSlice = createSlice({
       }
     },
     delet: (state, action) => {
-        state.panier.forEach(e => {
-            if (e.id === action.payload.id) {
-                e = {...e, qt: e.qt -= 1}
-            }
-        });
-    //   let itemPanier = action.payload;
-    //   console.log(itemPanier.qt);
-    //   if (itemPanier.qt > 1) {
-    //     itemPanier.qt -= 1;
-    //   } else {
-    //     state.panier.splice(state.panier.indexOf(itemPanier), 1);
-    //   }
+      state.panier.forEach((e) => {
+        if (e.id === action.payload.id) {
+          if (e.qt >= 1) {
+            e = { ...e, qt: (e.qt -= 1) };
+          } else if (e.qt == 0) {
+            state.panier.splice(state.panier.indexOf(action.payload), 1);
+          }
+        } else {
+        }
+      });
+    },
+    reset: (state, action) => {
+      state.panier = [""];
     },
   },
 });
 
-export const { add, delet } = panierSlice.actions;
+export const { add, delet, reset } = panierSlice.actions;
 export default panierSlice.reducer;
 
 // increment: (state, action) => {

@@ -4,6 +4,7 @@ import { useDispatch, useSelector } from "react-redux";
 // const counter = useSelector((state) => state.panier);
 // const dispatch = useDispatch();
 import { delet } from "../../Features/panierSlice";
+import { reset } from "../../Features/panierSlice";
 function Panier(props) {
   const panier = useSelector((state) => state.panier.panier);
   const dispatch = useDispatch();
@@ -18,7 +19,9 @@ function Panier(props) {
               <h1>{item.nom}</h1>
               <p>{item.prix}$</p>
               <p>{item.qt}</p>
+              
               <button onClick={() => dispatch(delet(item))}>decrease 1</button>
+              <button onClick={()=> dispatch(reset(item))}>Checkout</button>
             </div>
           </div>
         ))}
